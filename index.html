@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harshit's Portfolio</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Harshit</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hello! I'm Harshit</h2>
+      <p>2nd Year AIML Engineering Student | Frontend Developer Intern at CodeAlpha</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Passionate about Artificial Intelligence and Machine Learning, with a knack for frontend development.
+      I love creating user-friendly, beautiful websites and bringing ideas to life through code.
+    </p>
+  </section>
+
+  <section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Automated AI Board Wiper</strong><br />
+        AI-driven board cleaning project using servo motors and smart controls.<br />
+        <img src="Images/Automated Board Wiper.jpg" alt="AI Board Wiper Project" />
+      </li>
+      <!-- Add more projects here -->
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up" data-aos-delay="400">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:harshit@jssateb.ac.in">harshit@jssateb.ac.in</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/harshit-581082305/" target="_blank" rel="noopener noreferrer">harshit-581082305</a></p>
+    <p>GitHub: <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer">harshit21082006</a></p>
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <p>You can reach me at harshit@jssateb.ac.in or via my social links below.</p>
+
+  <!-- 🔽 Paste this below your contact text -->
+  <div class="social-icons" data-aos="fade-up" data-aos-delay="600">
+    <a href="https://linkedin.com/in/harshit-581082305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <img src="Images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
+    </a>
+    <a href="mailto:harshit@jssateb.ac.in" aria-label="Email">
+      <img src="Images/gmail-icon-logo-svgrepo-com.svg" alt="Email" />
+    </a>
+  </div>
+</section>
+  <footer>
+    <p>© 2025 Harshit | Frontend Developer Intern at CodeAlpha</p>
+  </footer>
+
+  <!-- Smooth scroll script -->
+  <script>
+    document.querySelector('.btn-primary').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>
