@@ -1,127 +1,151 @@
-/* Google Font applied */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #fff;
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+}
+
+/* Fonts & Colors */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 60px 20px 40px;
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-header h1 {
-  font-size: 2.8rem;
+/* Header */
+.header {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 60px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-header p {
-  font-size: 1.2rem;
+.header p {
+  font-size: 1.25rem;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
-/* Button styling */
-.button {
-  background: #fff;
-  color: #764ba2;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
+/* Button */
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
   text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.button:hover {
-  background: #f5f5f5;
-  color: #667eea;
-  transform: scale(1.05);
+.btn-primary:hover {
+  background-color: #1d4ed8;
 }
 
 /* Sections */
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 10px;
+.section {
+  margin-bottom: 60px;
 }
 
-section h2 {
+.section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 6px;
+  color: #1e293b;
 }
 
 /* Projects */
-.project {
-  background: rgba(255 255 255 / 0.1);
-  border-radius: 12px;
-  padding: 15px;
-  margin-bottom: 25px;
-  text-align: center;
-  transition: background-color 0.3s ease;
+.project-card {
+  display: flex;
+  gap: 20px;
+  background-color: #e0e7ff;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
 }
 
-.project img {
-  max-width: 100%;
-  height: auto;
+.project-card:hover {
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.project-card img {
+  width: 150px;
   border-radius: 8px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
-.project:hover {
-  background: rgba(255 255 255 / 0.2);
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #1e293b;
 }
 
-.project img:hover {
-  transform: scale(1.05);
+.project-info p {
+  color: #374151;
 }
 
-/* Contact Section */
+/* Contact */
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-section a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
 .social-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
+  gap: 30px;
 }
 
-.social-icons a {
-  margin: 0 12px;
-  display: inline-block;
-  transition: transform 0.3s ease;
+.social-icons a img {
+  width: 36px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
-}
-
-.social-icons a:hover {
+.social-icons a:hover img {
+  filter: none;
   transform: scale(1.2);
-  filter: brightness(1) invert(0);
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
+@media (max-width: 700px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
   }
-
-  section {
-    padding: 20px 10px;
-  }
-
-  .social-icons img {
-    width: 28px;
-    height: 28px;
-    margin: 0 8px;
+  
+  .project-card img {
+    width: 100%;
+    max-width: 300px;
   }
 }
