@@ -3,77 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harshit — Frontend Developer</title>
+  <title>Harshit's Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- AOS Animation CSS -->
+  <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- Custom CSS -->
+  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header data-aos="fade-down" class="header">
-    <div class="container">
-      <h1>Harshit</h1>
-      <p>Frontend Developer | AIML Engineering Student</p>
-      <a href="#contact" class="btn-primary">Get in touch</a>
-    </div>
+  <header data-aos="fade-down">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is Harshit, a Frontend Developer Intern at CodeAlpha.</p>
+    <a href="#contact" class="button">Get in touch</a>
   </header>
 
-  <main class="container">
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Currently pursuing 2nd year AIML Engineering. Passionate about frontend development and continuous learning.</p>
+  </section>
 
-    <section id="about" data-aos="fade-up" class="section">
-      <h2>About Me</h2>
-      <p>
-        I’m currently a 2nd year AIML Engineering student, passionate about frontend development and building impactful, user-friendly web applications. I’m excited to learn and grow through my internship at CodeAlpha.
-      </p>
-    </section>
+  <section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="Images/Automated Board Wiper.jpg" alt="Project Screenshot" />
+      <p>Automated AI Board Wiper - Built using HTML, CSS, JavaScript</p>
+    </div>
+    <!-- Add more projects here -->
+  </section>
 
-    <section id="projects" data-aos="fade-up" data-aos-delay="150" class="section">
-      <h2>Projects</h2>
+  <section id="contact" data-aos="fade-up" data-aos-delay="400">
+    <h2>Contact Me</h2>
+    <p>Email: harshit@jssateb.ac.in</p>
 
-      <article class="project-card">
-        <img src="Images/Automated Board Wiper" alt="Automated AI Board Wiper Project Screenshot" />
-        <div class="project-info">
-          <h3>Automated AI Board Wiper</h3>
-          <p>Frontend development using HTML, CSS & JavaScript.</p>
-          <!-- Optional: <a href="https://github.com/harshit21082006/project1" target="_blank" rel="noopener noreferrer">View Code</a> -->
-        </div>
-      </article>
-
-      <!-- Add more projects as needed -->
-
-    </section>
-
-    <section id="contact" data-aos="fade-up" data-aos-delay="300" class="section contact-section">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:harshit@jssateb.ac.in">harshit@jssateb.ac.in</a></p>
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/harshit-581082305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img src="Images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
-        </a>
-      </div>
-    </section>
-
-  </main>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/harshit-581082305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="Images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
+      </a>
+      <a href="mailto:harshit@jssateb.ac.in" aria-label="Email">
+        <img src="Images/gmail-icon-logo-svgrepo-com.svg" alt="Email" />
+      </a>
+    </div>
+  </section>
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 900,
+      duration: 1000,
       once: true,
-      easing: 'ease-in-out',
     });
   </script>
-
 </body>
 </html>
-
