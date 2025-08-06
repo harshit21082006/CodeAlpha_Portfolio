@@ -2,61 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harshit's Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Harshit</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Get in Touch</a></li>
-        <li><a href="resume-harshit.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h2>Hello, I'm Harshit 👋</h2>
-      <p>Frontend Developer Intern @ CodeAlpha | AIML Student</p>
-    </div>
+  <header data-aos="fade-down">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is Harshit, a Frontend Developer Intern at CodeAlpha.</p>
+    <a href="#contact" class="button">Get in touch</a>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm an AIML Engineering student passionate about frontend development. I enjoy creating clean, user-friendly, responsive websites and love combining logic with creativity.</p>
-    <a class="resume-button" href="resume-harshit.pdf" target="_blank">📄 View Resume</a>
+    <p>Currently pursuing 2nd year AIML Engineering. Passionate about frontend development and continuous learning.</p>
   </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <img src="Images/Automated Board Wiper.jpg" alt="Project 1"/>
-        <h3>AI Automated Board Wiper</h3>
-        <p>An AI-based mechanical system that auto-cleans whiteboards using servo logic and microcontrollers.</p>
-      </div>
-      <!-- Add more project cards as needed -->
+  <section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="Images/Automated Board Wiper.jpg" alt="Project Screenshot" />
+      <p>Automated AI Board Wiper - Built using HTML, CSS, JavaScript</p>
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section id="contact" data-aos="fade-up" data-aos-delay="400">
+    <h2>Contact Me</h2>
+    <p>Email: harshit@jssateb.ac.in</p>
+
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/harshit-581082305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="Images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
+      </a>
+      <a href="mailto:harshit@jssateb.ac.in" aria-label="Email">
+        <img src="Images/gmail-icon-logo-svgrepo-com.svg" alt="Email" />
+      </a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>📧 harshit@jssateb.ac.in</p>
-    <p>📱 +91 78925 36004</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/harshit-581082305/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/harshit21082006" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Harshit. All rights reserved.</p>
-  </footer>
-
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>
