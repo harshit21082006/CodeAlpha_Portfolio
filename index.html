@@ -2,54 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harshit's Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- AOS CSS -->
+  <!-- AOS for animation -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- Your CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header data-aos="fade-down">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is Harshit, a Frontend Developer Intern at CodeAlpha.</p>
-    <a href="#contact" class="button">Get in touch</a>
+  <header>
+    <div class="container">
+      <h1 data-aos="fade-down">Hi, I'm <span>Harshit</span></h1>
+      <p data-aos="fade-up" data-aos-delay="200">Frontend Developer | 2nd Year AIML Student | CodeAlpha Intern</p>
+      <a href="#contact" class="btn" data-aos="zoom-in" data-aos-delay="400">Contact Me</a>
+    </div>
   </header>
 
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Currently pursuing 2nd year AIML Engineering. Passionate about frontend development and continuous learning.</p>
-  </section>
+  <section id="projects">
+    <div class="container">
+      <h2 data-aos="fade-right">Projects</h2>
 
-  <section id="projects" data-aos="fade-up" data-aos-delay="200">
-    <h2>Projects</h2>
-    <div class="project">
-      <img src="Images/Automated Board Wiper.jpg" alt="Project Screenshot" />
-      <p>Automated AI Board Wiper - Built using HTML, CSS, JavaScript</p>
+      <div class="project-card" data-aos="fade-up">
+        <img src="Images/Automated Board Wiper.jpg" alt="AI Board Wiper">
+        <div>
+          <h3>Automated AI Board Wiper</h3>
+          <p>A smart AI-powered board wiper system using HTML, CSS & JavaScript for simulation.</p>
+        </div>
+      </div>
     </div>
-    <!-- Add more projects here -->
   </section>
 
-  <section id="contact" data-aos="fade-up" data-aos-delay="400">
-    <h2>Contact Me</h2>
-    <p>Email: harshit@jssateb.ac.in</p>
+  <section id="contact">
+    <div class="container">
+      <h2 data-aos="fade-left">Let's Connect</h2>
+      <p data-aos="fade-up">Want to collaborate or hire me? Reach out via:</p>
 
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/harshit-581082305" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <img src="Images/linkedin-svgrepo-com.svg" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/harshit21082006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
-      </a>
-      <a href="mailto:harshit@jssateb.ac.in" aria-label="Email">
-        <img src="Images/gmail-icon-logo-svgrepo-com.svg" alt="Email" />
-      </a>
+      <div class="social-icons" data-aos="zoom-in">
+        <a href="https://github.com/harshit21082006" target="_blank">
+          <img src="Images/github-icon-1-logo-svgrepo-com.svg" alt="GitHub" />
+        </a>
+        <a href="mailto:harshit@jssateb.ac.in">
+          <img src="Images/gmail-icon-logo-svgrepo-com.svg" alt="Email" />
+        </a>
+        <a href="resume.pdf" target="_blank">
+          <img src="Harshit_Accenture_Internship_Resume_page-0001.jpg" alt="Resume" />
+        </a>
+      </div>
     </div>
   </section>
 
@@ -58,7 +62,7 @@
   <script>
     AOS.init({
       duration: 1000,
-      once: true,
+      once: true
     });
   </script>
 </body>
